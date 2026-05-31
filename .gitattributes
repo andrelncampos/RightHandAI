@@ -1,0 +1,4 @@
+download/osx-arm64/RightHandAi filter=lfs diff=lfs merge=lfs -text
+download/win-x64/RightHandAi.exe filter=lfs diff=lfs merge=lfs -text
+download/osx-x64/RightHandAi filter=lfs diff=lfs merge=lfs -text
+download/linux-x64/RightHandAi filter=lfs diff=lfs merge=lfs -text

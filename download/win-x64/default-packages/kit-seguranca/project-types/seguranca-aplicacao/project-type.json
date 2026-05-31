@@ -1,0 +1,21 @@
+{
+  "id": "seguranca-aplicacao",
+  "name": "Segurança de Aplicação",
+  "version": "1.0.0",
+  "description": "Projeto com foco em segurança de aplicação. Complementar ao kit-construcao-software.",
+  "structure": [
+    "specs/",
+    "docs/",
+    ".right-hand-ai/"
+  ],
+  "requiredDocuments": [
+    {
+      "path": "docs/seguranca.md",
+      "name": "Modelo de Segurança",
+      "description": "Superfície de ataque, modelo de ameaças, decisões de segurança, checklist aplicável ao projeto.",
+      "createdBy": "humano"
+    }
+  ],
+  "globalRules": "Este projeto aplica práticas de segurança de aplicação. Todo código deve ser revisado contra OWASP Top 10. Secrets nunca hardcoded. Input sempre validado. Output sempre encoded. Princípio do menor privilégio em todas as camadas.",
+  "compatibleAgents": []
+}

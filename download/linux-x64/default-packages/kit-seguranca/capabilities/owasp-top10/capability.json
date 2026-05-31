@@ -1,0 +1,10 @@
+{
+  "id": "owasp-top10",
+  "name": "OWASP Top 10:2025",
+  "version": "1.0.0",
+  "description": "Checklist completo OWASP Top 10:2025 com requisitos verificáveis por categoria.",
+  "promptFile": "prompt.md",
+  "inputs": ["código-fonte", "specs", "arquitetura"],
+  "outputs": ["relatório de vulnerabilidades", "requisitos de segurança"],
+  "toolsRequired": ["filesystem-read"]
+}

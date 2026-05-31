@@ -1,0 +1,10 @@
+{
+  "id": "flutter",
+  "name": "Flutter",
+  "version": "1.0.0",
+  "description": "Templates e anti-padrões para Flutter/Dart: widgets, state management, null safety.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com telas/widgets mobile"],
+  "outputs": ["código Flutter/Dart conforme"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

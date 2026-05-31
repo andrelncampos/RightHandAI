@@ -1,0 +1,29 @@
+{
+  "id": "escritor",
+  "name": "Escritor",
+  "version": "1.0.0",
+  "description": "Transforma o planejamento do continuista em texto final de capítulo.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["livro"],
+  "standalone": "degraded",
+  "readRequired": [
+    "book/00-livro.md",
+    "book/01-biblia.md",
+    "book/02-voz.md",
+    "book/03-sumario.md",
+    "book/04-conceitos.md",
+    "book/06-revisao.md",
+    "book/07-continuidade.md"
+  ],
+  "writeScope": [
+    "book/chapters/Capitulo-*.md",
+    "book/chapters/*.journal"
+  ],
+  "mutuallyExclusive": ["continuista", "revisor"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "failClosed": {
+    "missingFiles": "Informar quais arquivos obrigatórios estão faltando e não executar.",
+    "noProject": "Operar em modo degradado: sem journal, sem handoff, sem máquina de estados."
+  }
+}

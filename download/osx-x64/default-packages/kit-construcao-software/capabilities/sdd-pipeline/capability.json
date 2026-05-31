@@ -1,0 +1,10 @@
+{
+  "id": "sdd-pipeline",
+  "name": "Pipeline SDD",
+  "version": "1.1.0",
+  "description": "Regras metodológicas do pipeline Spec-Driven Development. Injetado em todos os agentes SDD.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec (requirements.md + design.md + tasks.md)", "overlay do projeto", "codebase"],
+  "outputs": ["artefatos conforme fase do pipeline"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "revisor-seguranca",
+  "name": "Revisor de Segurança",
+  "version": "1.0.0",
+  "description": "Revisa specs e designs do ponto de vista de segurança ANTES da implementação. Threat modeling leve.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software", "seguranca-aplicacao"],
+  "standalone": "degraded",
+  "readRequired": [],
+  "writeScope": ["specs/**", "docs/**"],
+  "mutuallyExclusive": [],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "capabilities": ["owasp-top10", "auth-patterns", "crypto-patterns", "api-security", "data-protection", "secrets-management"],
+  "failClosed": {
+    "missingFiles": "Nenhum arquivo obrigatório — pode revisar qualquer spec.",
+    "noProject": "Pode operar em modo degradado revisando specs fornecidas no chat."
+  }
+}

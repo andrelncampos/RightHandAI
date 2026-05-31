@@ -1,0 +1,10 @@
+{
+  "id": "angular",
+  "name": "Angular",
+  "version": "1.0.0",
+  "description": "Templates e anti-padrões para Angular com TypeScript: standalone components, RxJS, signals.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com componentes frontend Angular"],
+  "outputs": ["componentes Angular conformes"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

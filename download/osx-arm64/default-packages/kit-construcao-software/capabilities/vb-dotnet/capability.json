@@ -1,0 +1,10 @@
+{
+  "id": "vb-dotnet",
+  "name": "VB.NET",
+  "version": "1.0.0",
+  "description": "Templates e anti-padrões para VB.NET: Option Strict, convenções, async, LINQ, interop C#.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com código VB.NET"],
+  "outputs": ["código VB.NET conforme"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

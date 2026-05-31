@@ -1,0 +1,10 @@
+{
+  "id": "delphi",
+  "name": "Delphi",
+  "version": "1.0.0",
+  "description": "Templates e anti-padrões para Delphi/Object Pascal: convenções, memória, FireDAC, VCL/FMX.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com forms/services Delphi"],
+  "outputs": ["código Delphi conforme"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

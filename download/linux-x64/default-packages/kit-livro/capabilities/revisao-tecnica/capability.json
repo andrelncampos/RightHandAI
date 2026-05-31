@@ -1,0 +1,10 @@
+{
+  "id": "revisao-tecnica",
+  "name": "Revisão Técnica",
+  "version": "1.0.0",
+  "description": "Habilidade de revisar artefatos contra critérios de qualidade definidos.",
+  "promptFile": "prompt.md",
+  "inputs": ["artefato a revisar", "critérios de qualidade"],
+  "outputs": ["parecer estruturado com erros/melhorias/sugestões"],
+  "toolsRequired": ["filesystem-read"]
+}

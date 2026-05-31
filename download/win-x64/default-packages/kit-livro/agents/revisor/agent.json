@@ -1,0 +1,28 @@
+{
+  "id": "revisor",
+  "name": "Revisor",
+  "version": "1.0.0",
+  "description": "Garante que cada capítulo cumpre os padrões definidos no planejamento.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["livro"],
+  "standalone": "degraded",
+  "readRequired": [
+    "book/00-livro.md",
+    "book/01-biblia.md",
+    "book/02-voz.md",
+    "book/03-sumario.md",
+    "book/04-conceitos.md",
+    "book/06-revisao.md",
+    "book/07-continuidade.md"
+  ],
+  "writeScope": [
+    "book/chapters/*.journal"
+  ],
+  "mutuallyExclusive": ["continuista", "escritor"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "failClosed": {
+    "missingFiles": "Informar quais arquivos obrigatórios estão faltando e não executar.",
+    "noProject": "Operar em modo degradado: sem journal, sem handoff, sem máquina de estados."
+  }
+}

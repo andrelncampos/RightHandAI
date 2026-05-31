@@ -1,0 +1,10 @@
+{
+  "id": "auth-patterns",
+  "name": "Padrões de Autenticação e Autorização",
+  "version": "1.0.0",
+  "description": "Padrões seguros de autenticação (JWT, OAuth, session) e autorização (RBAC, ABAC, record ownership).",
+  "promptFile": "prompt.md",
+  "inputs": ["código de autenticação", "specs com auth"],
+  "outputs": ["recomendações de auth segura"],
+  "toolsRequired": ["filesystem-read"]
+}

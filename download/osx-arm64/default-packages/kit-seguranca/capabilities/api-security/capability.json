@@ -1,0 +1,10 @@
+{
+  "id": "api-security",
+  "name": "Segurança de APIs",
+  "version": "1.0.0",
+  "description": "Rate limiting, input validation, CORS, headers de segurança, proteção de endpoints.",
+  "promptFile": "prompt.md",
+  "inputs": ["código de API", "endpoints"],
+  "outputs": ["recomendações de segurança de API"],
+  "toolsRequired": ["filesystem-read"]
+}

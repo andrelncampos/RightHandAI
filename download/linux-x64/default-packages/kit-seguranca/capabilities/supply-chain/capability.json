@@ -1,0 +1,10 @@
+{
+  "id": "supply-chain",
+  "name": "Segurança de Supply Chain",
+  "version": "1.0.0",
+  "description": "Dependências seguras, lockfiles, audit de vulnerabilidades, SRI.",
+  "promptFile": "prompt.md",
+  "inputs": ["package.json", "*.csproj", "Cargo.toml", "requirements.txt"],
+  "outputs": ["alertas de dependências vulneráveis"],
+  "toolsRequired": ["filesystem-read"]
+}

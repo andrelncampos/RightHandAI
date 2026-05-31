@@ -1,0 +1,19 @@
+{
+  "id": "auditor-sdd",
+  "name": "Auditor",
+  "version": "1.2.0",
+  "description": "Auditoria final: gap analysis, anti-padrões, conformidade. Decide PASS/FAIL sem aprovação humana. Tolerância ZERO.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software"],
+  "standalone": "none",
+  "readRequired": [],
+  "writeScope": ["src/**", "tests/**", "specs/**", "docs/roadmap.md"],
+  "mutuallyExclusive": ["especificador", "revisor-spec", "implementador", "qa-sdd"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "capabilities": ["sdd-pipeline"],
+  "failClosed": {
+    "missingFiles": "Nenhum arquivo obrigatório — opera com base na spec.",
+    "noProject": "Auditor requer projeto com spec em QA Passed (🧪)."
+  }
+}

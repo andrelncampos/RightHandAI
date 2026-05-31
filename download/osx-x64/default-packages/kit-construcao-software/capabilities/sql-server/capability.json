@@ -1,0 +1,10 @@
+{
+  "id": "sql-server",
+  "name": "SQL Server",
+  "version": "1.0.0",
+  "description": "Migration safe, índices, queries parametrizadas, padrões T-SQL.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com modelo de dados"],
+  "outputs": ["migrations e queries conformes"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

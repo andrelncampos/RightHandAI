@@ -1,0 +1,10 @@
+{
+  "id": "qa-integration-api",
+  "name": "QA Integration API",
+  "version": "1.0.0",
+  "description": "Templates WebApplicationFactory, seed, cleanup, status code validation.",
+  "promptFile": "prompt.md",
+  "inputs": ["endpoints implementados", "critérios de aceite"],
+  "outputs": ["testes de integração API"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

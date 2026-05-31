@@ -1,0 +1,19 @@
+{
+  "id": "qa-sdd",
+  "name": "QA",
+  "version": "1.2.0",
+  "description": "Testes E2E (Cypress/Playwright) e revisão de documentos SDD (visão, roadmap, specs).",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software"],
+  "standalone": "degraded",
+  "readRequired": [],
+  "writeScope": ["tests/**", "cypress/**", "e2e/**", "specs/**", "docs/**"],
+  "mutuallyExclusive": ["especificador", "revisor-spec", "implementador", "auditor-sdd"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "capabilities": ["sdd-pipeline", "qa-e2e-web"],
+  "failClosed": {
+    "missingFiles": "Nenhum arquivo obrigatório — pode operar em modo revisão documental.",
+    "noProject": "Pode revisar documentos sem projeto ativo. Para E2E, precisa de projeto com código."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "crypto-patterns",
+  "name": "Padrões de Criptografia",
+  "version": "1.0.0",
+  "description": "Uso correto de criptografia: hashing, encryption, key management, algoritmos seguros.",
+  "promptFile": "prompt.md",
+  "inputs": ["código com criptografia"],
+  "outputs": ["recomendações de crypto segura"],
+  "toolsRequired": ["filesystem-read"]
+}

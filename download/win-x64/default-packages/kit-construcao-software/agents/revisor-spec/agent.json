@@ -1,0 +1,19 @@
+{
+  "id": "revisor-spec",
+  "name": "Revisor de Spec",
+  "version": "1.2.0",
+  "description": "Valida spec contra invariantes e checklist. Auto-corrige falhas mecânicas. Decide PASS/FAIL sem aprovação humana.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software"],
+  "standalone": "none",
+  "readRequired": ["docs/roadmap.md"],
+  "writeScope": ["specs/**", "docs/roadmap.md"],
+  "mutuallyExclusive": ["especificador", "implementador", "qa-sdd", "auditor-sdd"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "capabilities": ["sdd-pipeline"],
+  "failClosed": {
+    "missingFiles": "Roadmap não encontrado.",
+    "noProject": "Revisor requer projeto com spec existente para revisar."
+  }
+}

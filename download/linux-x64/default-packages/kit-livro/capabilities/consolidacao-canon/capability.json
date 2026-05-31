@@ -1,0 +1,10 @@
+{
+  "id": "consolidacao-canon",
+  "name": "Consolidação de Canon",
+  "version": "1.0.0",
+  "description": "Habilidade de avaliar e promover decisões locais para arquivos globais do projeto.",
+  "promptFile": "prompt.md",
+  "inputs": ["decisões locais do capítulo/artefato", "arquivos globais do projeto"],
+  "outputs": ["lista de promoções necessárias ou confirmação de que nada precisa mudar"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

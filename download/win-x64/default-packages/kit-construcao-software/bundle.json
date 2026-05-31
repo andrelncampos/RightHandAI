@@ -1,0 +1,10 @@
+{
+  "id": "kit-construcao-software",
+  "name": "Kit Construção de Software",
+  "version": "1.2.0",
+  "description": "Bundle SDD para construção de software com pipeline de 7 agentes.",
+  "projectType": "construcao-software",
+  "agents": ["especificador", "implementador", "revisor-spec", "qa-sdd", "auditor-sdd", "registrar-licao", "revisor-ux-ui", "setup-sdd"],
+  "capabilities": ["sdd-pipeline", "blazor-app", "blazor-wasm", "dotnet-api", "sql-server", "postgresql", "qa-unit-dotnet", "qa-integration-api", "qa-e2e-web", "qa-migration-db", "angular", "vue", "flutter", "delphi", "vb-dotnet", "qa-unit-js", "qa-widget-flutter"],
+  "minRuntimeVersion": "1.1.0"
+}

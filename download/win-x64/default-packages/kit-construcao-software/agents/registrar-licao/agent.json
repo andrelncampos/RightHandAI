@@ -1,0 +1,19 @@
+{
+  "id": "registrar-licao",
+  "name": "Registrador de Lições",
+  "version": "1.0.0",
+  "description": "Captura erros do contexto e registra como lições aprendidas nos formatos condensado e completo.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software"],
+  "standalone": "full",
+  "readRequired": [],
+  "writeScope": ["docs/aprendizados.md", "docs/aprendizados-historico.md"],
+  "mutuallyExclusive": ["especificador", "revisor-spec", "implementador", "qa-sdd", "auditor-sdd", "setup-sdd"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "capabilities": ["sdd-pipeline"],
+  "failClosed": {
+    "missingFiles": "Nenhum arquivo obrigatório. Pode criar docs/aprendizados.md se não existir.",
+    "noProject": "Pode operar sem projeto ativo — erros de qualquer contexto são registráveis."
+  }
+}

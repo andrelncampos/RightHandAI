@@ -1,0 +1,10 @@
+{
+  "id": "qa-migration-db",
+  "name": "QA Migration DB",
+  "version": "1.0.0",
+  "description": "Testes de integridade de migration: aplicação, rollback, idempotência.",
+  "promptFile": "prompt.md",
+  "inputs": ["migrations criadas"],
+  "outputs": ["testes de integridade de migration"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

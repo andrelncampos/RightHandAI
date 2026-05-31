@@ -1,0 +1,10 @@
+{
+  "id": "blazor-app",
+  "name": "Blazor Web App",
+  "version": "1.0.0",
+  "description": "Templates, anti-padrões e checklists para Blazor Server/Web App com MudBlazor.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com componentes UI", "overlay com versão MudBlazor"],
+  "outputs": ["componentes .razor conformes"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

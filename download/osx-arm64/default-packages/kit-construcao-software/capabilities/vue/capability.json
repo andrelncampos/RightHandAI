@@ -1,0 +1,10 @@
+{
+  "id": "vue",
+  "name": "Vue",
+  "version": "1.0.0",
+  "description": "Templates e anti-padrões para Vue 3 com TypeScript: Composition API, Pinia, composables.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com componentes frontend Vue"],
+  "outputs": ["componentes Vue conformes"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

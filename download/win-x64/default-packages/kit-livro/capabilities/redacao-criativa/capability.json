@@ -1,0 +1,10 @@
+{
+  "id": "redacao-criativa",
+  "name": "Redação Criativa",
+  "version": "1.0.0",
+  "description": "Habilidade de produzir texto criativo seguindo voz, estilo e restrições definidas.",
+  "promptFile": "prompt.md",
+  "inputs": ["definição de voz/estilo", "estrutura/plano do texto", "restrições"],
+  "outputs": ["texto completo pronto para revisão"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

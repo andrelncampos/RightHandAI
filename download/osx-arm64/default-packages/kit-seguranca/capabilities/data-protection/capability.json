@@ -1,0 +1,10 @@
+{
+  "id": "data-protection",
+  "name": "Proteção de Dados e Privacidade",
+  "version": "1.0.0",
+  "description": "PII handling, LGPD/GDPR compliance, redação de dados sensíveis, minimização.",
+  "promptFile": "prompt.md",
+  "inputs": ["código que manipula dados pessoais"],
+  "outputs": ["recomendações de proteção de dados"],
+  "toolsRequired": ["filesystem-read"]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "qa-e2e-web",
+  "name": "QA E2E Web",
+  "version": "1.0.0",
+  "description": "Templates Cypress/Playwright, seletores estáveis, page objects, sincronização.",
+  "promptFile": "prompt.md",
+  "inputs": ["UI implementada", "critérios de aceite de UI"],
+  "outputs": ["testes E2E web"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

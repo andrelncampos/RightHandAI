@@ -1,0 +1,12 @@
+{
+  "id": "kit-livro",
+  "name": "Kit Produção de Livro",
+  "version": "1.0.0",
+  "description": "Bundle completo para escrita de livros com workflow editorial.",
+  "author": "Right Hand AI+",
+  "license": "built-in",
+  "projectType": "livro",
+  "agents": ["continuista", "escritor", "revisor"],
+  "capabilities": ["revisao-tecnica", "consolidacao-canon", "redacao-criativa"],
+  "minRuntimeVersion": "1.0.0"
+}

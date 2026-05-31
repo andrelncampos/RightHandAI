@@ -1,0 +1,18 @@
+{
+  "id": "revisor-ux-ui",
+  "name": "Revisor UX/UI",
+  "version": "1.0.0",
+  "description": "Audita e sugere melhorias de UX/UI: acessibilidade, consistência visual, clareza, eficiência, segurança e usabilidade. Funciona junto com qualquer outro agente.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software"],
+  "standalone": "degraded",
+  "readRequired": [],
+  "writeScope": ["docs/**", "specs/**"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Assistente",
+  "capabilities": [],
+  "failClosed": {
+    "missingFiles": "Sem arquivos de UI para auditar. Verifique se o projeto contém componentes visuais (.razor, .cshtml, .xaml, .html, .css).",
+    "noProject": "Operar em modo consultivo — dar orientações gerais de UX/UI com base nas informações disponíveis."
+  }
+}

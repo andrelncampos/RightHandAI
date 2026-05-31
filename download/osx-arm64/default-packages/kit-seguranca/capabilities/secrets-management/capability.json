@@ -1,0 +1,10 @@
+{
+  "id": "secrets-management",
+  "name": "Gestão de Secrets",
+  "version": "1.0.0",
+  "description": "Nunca hardcoded, env vars, vaults, rotação, detecção de vazamento.",
+  "promptFile": "prompt.md",
+  "inputs": ["código-fonte", "configs", "CI/CD"],
+  "outputs": ["alertas de secrets expostos"],
+  "toolsRequired": ["filesystem-read"]
+}

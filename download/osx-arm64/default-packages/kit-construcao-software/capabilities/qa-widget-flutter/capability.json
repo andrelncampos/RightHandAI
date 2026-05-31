@@ -1,0 +1,10 @@
+{
+  "id": "qa-widget-flutter",
+  "name": "QA Widget Flutter",
+  "version": "1.0.0",
+  "description": "Templates flutter_test: widget testing, integration testing, golden tests.",
+  "promptFile": "prompt.md",
+  "inputs": ["widgets Flutter implementados"],
+  "outputs": ["testes de widget Flutter"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

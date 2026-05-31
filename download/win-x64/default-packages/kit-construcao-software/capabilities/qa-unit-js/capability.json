@@ -1,0 +1,10 @@
+{
+  "id": "qa-unit-js",
+  "name": "QA Unit JS",
+  "version": "1.0.0",
+  "description": "Templates Jest/Vitest, mocking, coverage para testes unitários JS/TS.",
+  "promptFile": "prompt.md",
+  "inputs": ["código JS/TS implementado", "critérios de aceite"],
+  "outputs": ["testes unitários Jest/Vitest"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

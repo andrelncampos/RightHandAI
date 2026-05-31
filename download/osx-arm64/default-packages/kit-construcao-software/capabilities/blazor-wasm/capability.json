@@ -1,0 +1,10 @@
+{
+  "id": "blazor-wasm",
+  "name": "Blazor WASM",
+  "version": "1.0.0",
+  "description": "Regras específicas para Blazor WebAssembly: client-side, HttpClient, bundle size, lazy loading.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com componentes client-side"],
+  "outputs": ["componentes .razor WASM-conformes"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

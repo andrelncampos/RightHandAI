@@ -1,0 +1,11 @@
+{
+  "id": "assistente-geral",
+  "name": "Assistente Geral",
+  "version": "1.0.0",
+  "description": "Assistente de propósito geral para tarefas pontuais sem projeto.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": [],
+  "standalone": "full",
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor"
+}

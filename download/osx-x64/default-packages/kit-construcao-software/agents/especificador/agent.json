@@ -1,0 +1,19 @@
+{
+  "id": "especificador",
+  "name": "Especificador",
+  "version": "1.2.0",
+  "description": "Cria specs completas (requirements + design + tasks) para implementação 100% autônoma por IA.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software"],
+  "standalone": "degraded",
+  "readRequired": ["docs/visao.md", "docs/roadmap.md"],
+  "writeScope": ["specs/**", "docs/roadmap.md"],
+  "mutuallyExclusive": ["revisor-spec", "implementador", "qa-sdd", "auditor-sdd"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "capabilities": ["sdd-pipeline"],
+  "failClosed": {
+    "missingFiles": "Visão ou roadmap não encontrados. Perguntar ao humano para criá-los.",
+    "noProject": "Operar em modo degradado: sem docs fundacionais. Guiar humano para criá-los."
+  }
+}

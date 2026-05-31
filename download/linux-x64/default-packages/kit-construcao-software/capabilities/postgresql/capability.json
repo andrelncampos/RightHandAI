@@ -1,0 +1,10 @@
+{
+  "id": "postgresql",
+  "name": "PostgreSQL",
+  "version": "1.0.0",
+  "description": "jsonb, uuid, ILIKE, ON CONFLICT, índices GIN/GIST, migration safe.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com modelo de dados"],
+  "outputs": ["migrations e queries PostgreSQL conformes"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

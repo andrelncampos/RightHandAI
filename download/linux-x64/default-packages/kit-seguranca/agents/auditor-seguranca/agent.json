@@ -1,0 +1,19 @@
+{
+  "id": "auditor-seguranca",
+  "name": "Auditor de Segurança",
+  "version": "1.0.0",
+  "description": "Analisa código buscando vulnerabilidades OWASP Top 10, secrets expostos, injection, auth bypass.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software", "seguranca-aplicacao"],
+  "standalone": "degraded",
+  "readRequired": [],
+  "writeScope": ["docs/**", "specs/**"],
+  "mutuallyExclusive": [],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Leitor",
+  "capabilities": ["owasp-top10", "auth-patterns", "crypto-patterns", "api-security", "data-protection", "secrets-management", "supply-chain"],
+  "failClosed": {
+    "missingFiles": "Nenhum arquivo obrigatório — pode auditar qualquer código.",
+    "noProject": "Pode operar em modo degradado analisando código fornecido no chat."
+  }
+}

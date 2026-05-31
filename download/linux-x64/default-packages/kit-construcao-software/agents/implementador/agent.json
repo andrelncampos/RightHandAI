@@ -1,0 +1,19 @@
+{
+  "id": "implementador",
+  "name": "Implementador",
+  "version": "1.2.0",
+  "description": "Executa tasks da spec sequencialmente. Build/test após cada task. Gate: spec revisada (✅). Não para entre tasks.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software"],
+  "standalone": "none",
+  "readRequired": [],
+  "writeScope": ["src/**", "tests/**", "specs/**", "docs/roadmap.md"],
+  "mutuallyExclusive": ["especificador", "revisor-spec", "qa-sdd", "auditor-sdd"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "capabilities": ["sdd-pipeline"],
+  "failClosed": {
+    "missingFiles": "Nenhum arquivo obrigatório — opera com base na spec.",
+    "noProject": "Implementador requer projeto com spec revisada (✅)."
+  }
+}

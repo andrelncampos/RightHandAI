@@ -1,0 +1,36 @@
+{
+  "id": "continuista",
+  "name": "Continuista",
+  "version": "1.0.0",
+  "description": "Mantém consistência, planeja capítulos e consolida a memória global do livro.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["livro"],
+  "standalone": "none",
+  "readRequired": [
+    "book/00-livro.md",
+    "book/01-biblia.md",
+    "book/02-voz.md",
+    "book/03-sumario.md",
+    "book/04-conceitos.md",
+    "book/06-revisao.md",
+    "book/07-continuidade.md"
+  ],
+  "writeScope": [
+    "book/00-livro.md",
+    "book/01-biblia.md",
+    "book/02-voz.md",
+    "book/03-sumario.md",
+    "book/04-conceitos.md",
+    "book/05-fluxo.md",
+    "book/06-revisao.md",
+    "book/07-continuidade.md",
+    "book/chapters/*.journal"
+  ],
+  "mutuallyExclusive": ["escritor", "revisor"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "failClosed": {
+    "missingFiles": "Verificar quais arquivos-base faltam e guiar o usuário para criá-los um a um.",
+    "noProject": "Sem projeto livro configurado. Guiar o usuário para criar a estrutura book/."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "dotnet-api",
+  "name": ".NET API",
+  "version": "1.0.0",
+  "description": "Templates e anti-padrões para ASP.NET Core API: use cases, controllers, EF Core, DTOs.",
+  "promptFile": "prompt.md",
+  "inputs": ["spec com endpoints/handlers"],
+  "outputs": ["código .cs conforme padrões"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}

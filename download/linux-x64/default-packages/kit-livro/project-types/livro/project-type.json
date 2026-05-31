@@ -1,0 +1,34 @@
+{
+  "id": "livro",
+  "name": "Livro",
+  "version": "1.0.0",
+  "description": "Projeto de escrita de livro com workflow editorial completo.",
+  "structure": [
+    "book/",
+    "book/chapters/",
+    "book/00-livro.md",
+    "book/01-biblia.md",
+    "book/02-voz.md",
+    "book/03-sumario.md",
+    "book/04-conceitos.md",
+    "book/05-fluxo.md",
+    "book/06-revisao.md",
+    "book/07-continuidade.md"
+  ],
+  "compatibleAgents": ["continuista", "escritor", "revisor"],
+  "globalRules": "Arquivos 00-04, 06 e 07 devem existir antes de criar qualquer capítulo. 05-fluxo.md é documentação humana, não insumo operacional. 07-continuidade.md é a memória viva do livro — atualizada após cada capítulo aprovado. Capitulo-NN.md contém SOMENTE texto do capítulo. Capitulo-NN.journal é o centro do handoff assíncrono com briefing estruturado de 19 campos.",
+  "stateMachine": {
+    "states": ["Planejado", "EmEscrita", "EmRevisao", "Reprovado", "Aprovado"],
+    "transitions": [
+      { "from": "Planejado", "to": "EmEscrita", "actor": "escritor" },
+      { "from": "EmEscrita", "to": "EmRevisao", "actor": "escritor" },
+      { "from": "EmRevisao", "to": "Reprovado", "actor": "revisor" },
+      { "from": "EmRevisao", "to": "Aprovado", "actor": "revisor" },
+      { "from": "Reprovado", "to": "EmRevisao", "actor": "escritor" }
+    ]
+  },
+  "requirements": {
+    "filesystem": true,
+    "minAutonomy": "Editor"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "construcao-software",
+  "name": "Construção de Software",
+  "version": "1.1.0",
+  "description": "Projeto de construção de software com pipeline SDD (Spec-Driven Development).",
+  "structure": [
+    "specs/",
+    "docs/",
+    ".right-hand-ai/"
+  ],
+  "requiredDocuments": [
+    {
+      "path": "docs/visao.md",
+      "name": "Visão do Produto",
+      "description": "Blueprint do produto: valor entregue, funcionalidades, público-alvo, métricas de sucesso. Cada spec deve ter origem rastreável neste documento.",
+      "createdBy": "humano"
+    },
+    {
+      "path": "docs/arquitetura.md",
+      "name": "Arquitetura",
+      "description": "Stack tecnológica, bancos, segurança, padrões de código, deploy. Specs referenciam seções relevantes.",
+      "createdBy": "humano"
+    },
+    {
+      "path": "docs/ADR.md",
+      "name": "Decisões Arquiteturais",
+      "description": "Decisões técnicas definitivas com contexto e consequências. Inegociáveis até reabertura formal.",
+      "createdBy": "humano"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "name": "Roadmap de Specs",
+      "description": "Mapa central de specs. Cada spec referencia: visão (origem), arquitetura (camada), ADRs e lições (restrições). Fonte de verdade para o pipeline.",
+      "createdBy": "humano"
+    },
+    {
+      "path": "docs/licoes.md",
+      "name": "Lições Aprendidas",
+      "description": "Erros registrados com regra derivada. Consultado antes de código na mesma área.",
+      "createdBy": "ia"
+    },
+    {
+      "path": ".right-hand-ai/project.json",
+      "name": "Configuração do Projeto",
+      "description": "Tipo de projeto e configurações. Criado automaticamente pelo sistema.",
+      "createdBy": "sistema"
+    },
+    {
+      "path": ".right-hand-ai/technical-rules.md",
+      "name": "Regras Técnicas (Overlay)",
+      "description": "Stack, comandos de build/test, anti-padrões, padrões obrigatórios, convenções do projeto. Consultado pelo Implementador e Auditor.",
+      "createdBy": "humano"
+    }
+  ],
+  "globalRules": "Este projeto segue o método SDD. Toda implementação é precedida por spec completa (requirements.md + design.md + tasks.md). Nunca implementar sem spec revisada. Specs ficam em /specs/{N}-{nome}/. Cada spec no roadmap DEVE apontar para: visão (origem/valor), arquitetura (camada afetada), ADRs e lições (restrições). Se uma spec nova não estava prevista na visão, criar seção na visão com rationale antes de criar a spec.",
+  "compatibleAgents": []
+}

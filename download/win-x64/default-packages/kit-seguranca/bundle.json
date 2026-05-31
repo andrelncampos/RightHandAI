@@ -1,0 +1,12 @@
+{
+  "id": "kit-seguranca",
+  "name": "Kit Segurança de Aplicação",
+  "version": "1.0.0",
+  "description": "Bundle de segurança para aplicações. 3 agentes + capabilities OWASP Top 10, auth, crypto, API, dados, supply chain.",
+  "author": "Right Hand AI+",
+  "license": "built-in",
+  "projectType": "seguranca-aplicacao",
+  "agents": ["auditor-seguranca", "revisor-seguranca", "pentester"],
+  "capabilities": ["owasp-top10", "auth-patterns", "crypto-patterns", "api-security", "data-protection", "secrets-management", "supply-chain"],
+  "minRuntimeVersion": "1.1.0"
+}

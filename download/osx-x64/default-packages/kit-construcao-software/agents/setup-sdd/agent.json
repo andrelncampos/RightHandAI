@@ -1,0 +1,20 @@
+{
+  "id": "setup-sdd",
+  "name": "Setup SDD",
+  "version": "1.0.0",
+  "description": "Verifica conformidade do projeto com o método SDD. Cria artefatos faltantes, reporta o que precisa do humano.",
+  "promptFile": "prompt.md",
+  "compatibleProjectTypes": ["construcao-software"],
+  "standalone": "full",
+  "readRequired": [],
+  "writeScope": ["docs/**", "specs/**"],
+  "mutuallyExclusive": ["especificador", "revisor-spec", "implementador", "qa-sdd", "auditor-sdd", "registrar-licao"],
+  "tools": ["filesystem-read", "filesystem-write"],
+  "defaultAutonomy": "Editor",
+  "capabilities": ["sdd-pipeline"],
+  "hidden": true,
+  "failClosed": {
+    "missingFiles": "Perguntar ao humano para criar docs fundacionais (visão, arquitetura, ADR, roadmap).",
+    "noProject": "Guiar humano para criar projeto tipo 'construcao-software'."
+  }
+}

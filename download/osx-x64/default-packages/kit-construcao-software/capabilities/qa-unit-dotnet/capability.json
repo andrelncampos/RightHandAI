@@ -1,0 +1,10 @@
+{
+  "id": "qa-unit-dotnet",
+  "name": "QA Unit .NET",
+  "version": "1.0.0",
+  "description": "Templates xUnit, mocks, arrange-act-assert, tenant isolation test.",
+  "promptFile": "prompt.md",
+  "inputs": ["código implementado", "critérios de aceite"],
+  "outputs": ["testes unitários xUnit"],
+  "toolsRequired": ["filesystem-read", "filesystem-write"]
+}
