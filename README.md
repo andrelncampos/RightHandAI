@@ -1,221 +1,225 @@
 <p align="center">
+  <sub>🌐 <a href="README.md">English</a> | <a href="README.pt.md">Português</a> | <a href="README.zh-cn.md">中文</a> | <a href="README.es.md">Español</a> | <a href="README.hi.md">हिन्दी</a></sub>
+</p>
+
+<p align="center">
   <h1 align="center">RightHand AI</h1>
   <p align="center">
-    <strong>Assistente de IA local para desenvolvimento de software.</strong><br>
-    Roda na sua máquina. Conecta ao LLM que você escolher. <strong>Grátis.</strong>
+    <strong>Local AI assistant for software development.</strong><br>
+    Runs on your machine. Connects to the LLM you choose. <strong>Free.</strong>
   </p>
 </p>
 
 <p align="center">
-  <a href="./download/"><img src="https://img.shields.io/badge/versão-1.1.0-blue" alt="Versão"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/licença-Freeware%20(gratuito)-brightgreen" alt="Licença"></a>
+  <a href="./download/"><img src="https://img.shields.io/badge/version-1.1.0-blue" alt="Version"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-Freeware%20(free)-brightgreen" alt="License"></a>
   <img src="https://img.shields.io/badge/Windows-10%2F11%20x64-0078D6" alt="Windows">
   <img src="https://img.shields.io/badge/Linux-x64-FCC624" alt="Linux">
   <img src="https://img.shields.io/badge/macOS-arm64%20%7C%20x64-999999" alt="macOS">
   <br>
-  <sub>Self-contained · Sem instalar .NET · 3 plataformas · 11 agentes especializados · 3 kits</sub>
+  <sub>Self-contained · No .NET install · 3 platforms · 11 specialized agents · 3 kits</sub>
 </p>
 
-![Tela principal do RightHand AI](./TelaPrincipal.png)
+![RightHand AI main screen](./TelaPrincipal.png)
 
 ---
 
 <p align="center">
-  <strong>⚡ 30 segundos para começar:</strong>
+  <strong>⚡ 30 seconds to get started:</strong>
   <br>
-  <sub>Baixe o ZIP da sua plataforma → descompacte → execute o launcher → configure sua API key → pronto.</sub>
+  <sub>Download your platform ZIP → extract → run the launcher → set your API key → done.</sub>
 </p>
 
 ---
 
-## O que faz o RightHand AI diferente
+## What makes RightHand AI different
 
-Enquanto outras ferramentas oferecem **um chat** ou **autocomplete no editor**, o RightHand AI coloca um **time de agentes especializados** para trabalhar no seu código — cada um com um papel específico no ciclo de desenvolvimento.
+While other tools offer **a chat** or **editor autocomplete**, RightHand AI puts a **team of specialized agents** to work on your code — each with a specific role in the development cycle.
 
-| Ferramenta | Modelo mental |
-|------------|---------------|
-| ChatGPT, Claude | **Um assistente** genérico respondendo perguntas |
-| Copilot, Cursor, Windsurf | **Um piloto automático** sugerindo código inline |
-| **RightHand AI** | **Um time de engenharia**: especificador, implementador, revisor, QA, auditor, pentester — colaborando orquestradamente |
+| Tool | Mental model |
+|------|-------------|
+| ChatGPT, Claude | **A generic assistant** answering questions |
+| Copilot, Cursor, Windsurf | **An autopilot** suggesting inline code |
+| **RightHand AI** | **An engineering team**: specifier, implementer, reviewer, QA, auditor, pentester — collaborating in orchestrated fashion |
 
-> Nenhum concorrente oferece um **pipeline completo** onde o que um agente produz é automaticamente validado pelo seguinte: o especificador cria a spec, o revisor aprova, o implementador codifica, o QA testa, o auditor verifica e o pentester valida a segurança.
+> No competitor offers a **complete pipeline** where what one agent produces is automatically validated by the next: the specifier creates the spec, the reviewer approves it, the implementer codes it, QA tests it, the auditor verifies it, and the pentester validates security.
 
 ---
 
 ## Download
 
-| Plataforma | Download | Tamanho |
-|------------|----------|:-------:|
+| Platform | Download | Size |
+|----------|----------|:----:|
 | 🪟 **Windows** 10/11 x64 | [`RightHandAi-win-x64.zip`](./download/RightHandAi-win-x64.zip) | ~80 MB |
 | 🐧 **Linux** x64 | [`RightHandAi-linux-x64.zip`](./download/RightHandAi-linux-x64.zip) | ~80 MB |
 | 🍎 **macOS** Apple Silicon | [`RightHandAi-osx-arm64.zip`](./download/RightHandAi-osx-arm64.zip) | ~80 MB |
 | 🍎 **macOS** Intel | [`RightHandAi-osx-x64.zip`](./download/RightHandAi-osx-x64.zip) | ~80 MB |
 
-| Requer | Não requer |
-|--------|------------|
-| Windows 10/11, Linux x64 ou macOS | ❌ Instalar .NET |
-| Chave de API (OpenAI, DeepSeek, etc.) | ❌ Cadastro no RightHand |
-| ~300 MB em disco | ❌ Enviar código para nuvem |
+| Requires | Does NOT require |
+|----------|------------------|
+| Windows 10/11, Linux x64, or macOS | ❌ Installing .NET |
+| API key (OpenAI, DeepSeek, etc.) | ❌ RightHand account |
+| ~300 MB disk space | ❌ Sending code to the cloud |
 
 ---
 
-## Instalação
+## Installation
 
 ```bash
 # Windows
-Baixe o ZIP → descompacte → execute RightHandAi Desktop.bat
+Download the ZIP → extract → run RightHandAi Desktop.bat
 
 # Linux
-Baixe o ZIP → descompacte → chmod +x right-hand-ai.sh → ./right-hand-ai.sh
+Download the ZIP → extract → chmod +x right-hand-ai.sh → ./right-hand-ai.sh
 
 # macOS
-Baixe o ZIP → descompacte → execute right-hand-ai.command
+Download the ZIP → extract → run right-hand-ai.command
 ```
-> 🍎 **Mac:** na primeira execução, botão direito → Abrir. Depois funciona direto.
+> 🍎 **Mac:** on first launch, right-click → Open. After that it works directly.
 
-O navegador abre em `http://127.0.0.1:5821`.
+Your browser opens at `http://127.0.0.1:5821`.
 
 ---
 
-## Primeiro uso
+## First use
 
-**1. Configure sua API key** (⚙️ canto superior direito). Exemplo com DeepSeek (melhor custo-benefício):
+**1. Configure your API key** (⚙️ top-right corner). Example with DeepSeek (best cost-benefit):
 
-| Campo | Valor |
+| Field | Value |
 |-------|-------|
-| Provedor | DeepSeek |
-| API Key | `sk-...` (sua chave) |
-| Modelo | `deepseek-chat` |
+| Provider | DeepSeek |
+| API Key | `sk-...` (your key) |
+| Model | `deepseek-chat` |
 
-**2. Abra uma pasta de projeto.** O app detecta a stack automaticamente.
+**2. Open a project folder.** The app auto-detects the stack.
 
-**3. Selecione os agentes** no painel de configurações. Pode usar vários ao mesmo tempo.
+**3. Select agents** in the settings panel. You can use multiple at once.
 
-**4. Peça o que quiser:**
+**4. Ask anything:**
 
-> *"Crie uma spec completa para um dashboard de métricas de vendas"*
+> *"Create a complete spec for a sales metrics dashboard"*
 >
-> *"Revise a segurança de todos os endpoints da API"*
+> *"Review the security of all API endpoints"*
 >
-> *"Audite a acessibilidade das telas de cadastro e me diga o que melhorar"*
+> *"Audit the accessibility of the registration screens and tell me what to improve"*
 
 ---
 
-## Agentes
+## Agents
 
-### 📦 Construção de Software
+### 📦 Software Construction
 
-| Agente | Função |
-|--------|--------|
-| 📝 **Especificador** | Transforma ideias em especificações completas: requisitos funcionais, design técnico e tarefas implementáveis — tudo pronto para execução |
-| 🔨 **Implementador** | Executa tarefas de código. Faz `dotnet build` e `dotnet test` a cada etapa. **Nunca avança com build quebrado** |
-| ✅ **Revisor Spec** | Revisa especificações contra checklist de qualidade: consistência interna, cobertura de requisitos, zero ambiguidade |
-| 🧪 **QA** | Gera e executa testes automatizados. Mapeia cada critério de aceite para um teste. **Zero gaps** |
-| 🔍 **Auditor** | Verifica cada critério de aceite contra o código implementado. Classificação binária: ✅ ou ❌. **Tolerância zero** |
+| Agent | Role |
+|-------|------|
+| 📝 **Specifier** | Transforms ideas into complete specifications: functional requirements, technical design, and implementable tasks — all ready for execution |
+| 🔨 **Implementer** | Executes code tasks. Runs `dotnet build` and `dotnet test` at every step. **Never advances with a broken build** |
+| ✅ **Spec Reviewer** | Reviews specifications against a quality checklist: internal consistency, requirement coverage, zero ambiguity |
+| 🧪 **QA** | Generates and runs automated tests. Maps each acceptance criterion to a test. **Zero gaps** |
+| 🔍 **Auditor** | Verifies each acceptance criterion against the implemented code. Binary classification: ✅ or ❌. **Zero tolerance** |
 
-### 🛡️ Segurança
+### 🛡️ Security
 
-| Agente | Função |
-|--------|--------|
-| 📋 **Revisor de Segurança** | Audita specs e designs **antes** da implementação. Threat modeling leve. "Ameaças se tratam no design, não em produção" |
-| 🗡️ **Auditor de Segurança** | Varre código contra OWASP Top 10, secrets expostos, SQL injection, XSS, auth bypass. Reporta arquivo:linha |
-| 🎯 **Pentester** | Simula ataques com payloads reais e gera testes automatizados para validar se as defesas realmente funcionam |
+| Agent | Role |
+|-------|------|
+| 📋 **Security Reviewer** | Audits specs and designs **before** implementation. Lightweight threat modeling. "Threats are handled at design time, not in production" |
+| 🗡️ **Security Auditor** | Scans code against OWASP Top 10, exposed secrets, SQL injection, XSS, auth bypass. Reports file:line |
+| 🎯 **Pentester** | Simulates attacks with real payloads and generates automated tests to validate that defenses actually work |
 
-### 🎨 Design e fundamentos
+### 🎨 Design & Foundations
 
-| Agente | Função |
-|--------|--------|
-| 🎨 **Revisor UX/UI** | Audita acessibilidade, consistência visual, clareza, hierarquia, microcopy e usabilidade em toda a aplicação |
-| ⚙️ **Setup SDD** | Configura a estrutura do método automaticamente. Executado sob demanda — o usuário nem precisa saber que ele existe |
+| Agent | Role |
+|-------|------|
+| 🎨 **UX/UI Reviewer** | Audits accessibility, visual consistency, clarity, hierarchy, microcopy, and usability across the entire application |
+| ⚙️ **SDD Setup** | Configures the method structure automatically. Runs on demand — the user doesn't even need to know it exists |
 
 ---
 
-## Pipeline de desenvolvimento
+## Development Pipeline
 
 ```mermaid
 graph LR
-    IDEIA[💡 Ideia] --> SPEC[📝 Especificador]
-    SPEC --> REV[✅ Revisor]
-    REV --> SEG[📋 Rev. Segurança]
-    REV --> UX[🎨 Rev. UX/UI]
-    SEG --> IMPL[🔨 Implementador]
+    IDEA[💡 Idea] --> SPEC[📝 Specifier]
+    SPEC --> REV[✅ Reviewer]
+    REV --> SEC[📋 Sec. Reviewer]
+    REV --> UX[🎨 UX/UI Reviewer]
+    SEC --> IMPL[🔨 Implementer]
     UX --> IMPL
-    IMPL --> AUDSEG[🗡️ Aud. Segurança]
+    IMPL --> AUDSEC[🗡️ Sec. Auditor]
     IMPL --> QA[🧪 QA]
-    AUDSEG --> AUD[🔍 Auditor]
+    AUDSEC --> AUD[🔍 Auditor]
     QA --> AUD
     AUD --> PENTEST[🎯 Pentester]
-    PENTEST --> PRONTO[🚀 Pronto]
+    PENTEST --> DONE[🚀 Done]
 ```
 
-**Cada agente valida a saída do anterior.** O especificador não implementa, o auditor não especifica. Isso garante que cada etapa seja revisada por uma perspectiva independente — como num time real de engenharia.
+**Each agent validates the previous agent's output.** The specifier doesn't implement, the auditor doesn't specify. This ensures each step is reviewed from an independent perspective — like a real engineering team.
 
 ---
 
-## 🔒 Privacidade
+## 🔒 Privacy
 
-**Seus dados nunca saem da sua máquina.** A comunicação é direta entre o aplicativo e o provedor de IA que você configurou.
+**Your data never leaves your machine.** Communication is direct between the app and the AI provider you configured.
 
-| O RightHand NÃO faz | O RightHand FAZ |
-|---------------------|-----------------|
-| ❌ Enviar código para servidor intermediário | ✅ Conectar direto na API do provedor |
-| ❌ Coletar telemetria ou analytics | ✅ Armazenar conversas localmente (SQLite) |
-| ❌ Exigir cadastro ou login | ✅ Rodar 100% offline após o primeiro setup |
-| ❌ Compartilhar dados com terceiros | ✅ Deixar você no controle total |
+| RightHand DOES NOT | RightHand DOES |
+|--------------------|----------------|
+| ❌ Send code to an intermediate server | ✅ Connect directly to the provider's API |
+| ❌ Collect telemetry or analytics | ✅ Store conversations locally (SQLite) |
+| ❌ Require registration or login | ✅ Run 100% offline after initial setup |
+| ❌ Share data with third parties | ✅ Keep you in full control |
 
 ---
 
-## Provedores suportados
+## Supported Providers
 
-| Provedor | Modelos | Custo relativo |
-|----------|---------|:--------------:|
+| Provider | Models | Relative cost |
+|----------|--------|:------------:|
 | **DeepSeek** | V3, R1, V4 | `$` |
 | **OpenAI** | GPT-4o, GPT-4.1, GPT-5, o1, o3, o4-mini | `$$$` |
 | **Anthropic** | Claude Opus 4, Sonnet 4 | `$$$` |
 | **Google Gemini** | 2.5 Pro, 2.5 Flash | `$$` |
 | **xAI** | Grok-3 | `$$` |
-| **OpenAI-compatible** | Ollama, Groq, Together, Fireworks, etc. | `$` a `$$$` |
+| **OpenAI-compatible** | Ollama, Groq, Together, Fireworks, etc. | `$` to `$$$` |
 
-> 💡 **DeepSeek V4** entrega qualidade excelente para código por ~10x menos que os concorrentes premium. Ideal para implementação e revisão.
+> 💡 **DeepSeek V4** delivers excellent code quality for ~10x less than premium competitors. Ideal for implementation and review.
 
 ---
 
-## Níveis de autonomia
+## Autonomy Levels
 
-Cada agente tem um nível configurável de controle:
+Each agent has a configurable control level:
 
-| 🔒 Leitor | ✏️ Editor | 📝 Assistente | ⚡ Executor |
+| 🔒 Reader | ✏️ Editor | 📝 Assistant | ⚡ Executor |
 |:---------:|:---------:|:------------:|:----------:|
-| Lê arquivos e responde | Cria/edita docs e configs | Propõe mudanças (requer aprovação) | Aplica mudanças e executa comandos |
+| Reads files and responds | Creates/edits docs and configs | Proposes changes (requires approval) | Applies changes and runs commands |
 
-O padrão de cada agente é seguro. Exemplo: Auditor de Segurança = Leitor (só reporta), Implementador = Executor (aplica código).
-
----
-
-## Solução de problemas
-
-| Problema | Faça isto |
-|----------|-----------|
-| **"Connection refused"** | App está iniciando. Aguarde 5 segundos e recarregue `http://127.0.0.1:5821` |
-| **Porta 5821 ocupada** | Feche outra instância ou altere a porta nas configurações |
-| **"Invalid API Key"** | Confira se copiou a chave sem espaços extras. Gere uma nova no painel do provedor |
-| **Respostas lentas** | Troque para modelo mais rápido: `deepseek-chat` ou `gpt-4o-mini` |
-| **Agente não aparece** | Abra uma pasta de projeto — alguns agentes exigem workspace |
-| **Build quebrado** | O Implementador corrige sozinho. Peça "corrija o build" se travar |
-| 🍎 **macOS: "não é possível verificar"** | Normal na 1ª vez. Botão direito → **Abrir**. Depois funciona direto |
-| 🐧 **Linux/macOS: permissão negada** | `chmod +x right-hand-ai.sh` (ou `.command`) |
+Each agent's default is safe. Example: Security Auditor = Reader (reports only), Implementer = Executor (applies code).
 
 ---
 
-## Desinstalação
+## Troubleshooting
 
-**Windows:** Adicionar ou remover programas → RightHand AI.  
-**Linux/macOS:** Remova a pasta do aplicativo.
+| Problem | Do this |
+|---------|---------|
+| **"Connection refused"** | App is starting. Wait 5 seconds and reload `http://127.0.0.1:5821` |
+| **Port 5821 in use** | Close another instance or change the port in settings |
+| **"Invalid API Key"** | Make sure you copied the key without extra spaces. Generate a new one in your provider's dashboard |
+| **Slow responses** | Switch to a faster model: `deepseek-chat` or `gpt-4o-mini` |
+| **Agent not showing up** | Open a project folder — some agents require a workspace |
+| **Broken build** | The Implementer fixes itself. Ask "fix the build" if stuck |
+| 🍎 **macOS: "cannot be verified"** | Normal on first launch. Right-click → **Open**. Works directly after that |
+| 🐧 **Linux/macOS: permission denied** | `chmod +x right-hand-ai.sh` (or `.command`) |
 
-Seus dados ficam preservados. Para removê-los, apague a pasta indicada abaixo:
+---
 
-| SO | Pasta de dados |
-|----|----------------|
+## Uninstall
+
+**Windows:** Add or Remove Programs → RightHand AI.  
+**Linux/macOS:** Remove the application folder.
+
+Your data is preserved. To remove it, delete the folder indicated below:
+
+| OS | Data folder |
+|----|-------------|
 | Windows | `%LocalAppData%\RightHandAi\` |
 | Linux | `~/.local/share/RightHandAi/` |
 | macOS | `~/Library/Application Support/RightHandAi/` |
@@ -223,6 +227,6 @@ Seus dados ficam preservados. Para removê-los, apague a pasta indicada abaixo:
 ---
 
 <p align="center">
-  <strong>RightHand AI 1.1.0</strong> · Maio 2026<br>
-  <sub>Grátis. Multi-plataforma. Sem cadastro. Sem telemetria.</sub>
+  <strong>RightHand AI 1.1.0</strong> · May 2026<br>
+  <sub>Free. Multi-platform. No registration. No telemetry.</sub>
 </p>
